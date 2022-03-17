@@ -1,0 +1,58 @@
+
+body{
+    font-style: 'Times New Roman';
+}
+.titulos{
+    color:#005677;
+    background-color: #c4c4c4;
+    font-weight: 700, bold;
+}
+
+.salto{
+    height: 250px;
+}
+
+.tipo-de-dato{
+    font-style: italic;
+    font-weight: bold;
+}
+
+.año{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h1{
+    width:auto;
+    height: 29.87px;
+    top: 202.13px;
+    left: 213px;
+    font-size: 35px;
+    line-height: 84.69%;
+    font-feature-settings: "cpsp" on;
+    position: sticky;
+    text-align: center;
+    
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: #005677;
+    font-weight: bold;
+}
+
+header{
+    width: 1440px;
+    position: absolute;
+    height: 188.19px;
+}
+
+.background-batman{
+    background: url(../images/logo\ batman.png);
+    background-repeat: no-repeat;
+    background-position: 65%,50%;
+}

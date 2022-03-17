@@ -1,0 +1,14 @@
+header{
+    background-image: url(../images/wallpaper-cabecera.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    
+}
+
+body{
+    font-family: "Avalon";
+}

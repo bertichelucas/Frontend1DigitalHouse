@@ -1,0 +1,26 @@
+.fondo{
+    background-image: url('../images/wallpaper-engine.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*contenedor*/
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+}
+
+.logo{
+    background-image: url('../images/logo.jpg'), url('../images/logo.jpg') ;
+    background-color: salmon;
+    background-position: center;
+    background-repeat: repeat-x repeat-y;
+    border: 2px solid black;
+    height: 500px;
+    width: 100%;
+}
+
+.fondo-gradiente{
+    background: linear-gradient(to top, purple, pink, yellow);
+    height: 500px;
+    width: 100%;
+}
