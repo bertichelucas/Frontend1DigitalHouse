@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+/***Seccion-General***/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulos{
+    font-weight: 700;
+}
+
+.textos{
+    font-weight: 400;
+}
+
+
+/***Seccion-Header***/
+
+.barra-superior{
+    background-color: #222222;
+    color: white;
+}
+
+
+.menu-principal{
+    background-color: #F0A83E;
+    color: white;
+
+}
+
+.logo{
+    width: 166px;
+    height: 23px;
+}
+
+
+/***Seccion Banner***/
+
+main{
+    color:#3C2313;
+}
+
+.banner{
+    background-image: url("../images/bowl_pet.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 409px;
+}
+
+.texto-principal-banner{
+    position: absolute;
+    width: 345px;
+    height: 35px;
+    left: 658px;
+    top: 246px;
+
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+#texto-banner{
+    position: absolute;
+    width: 190px;
+    height: 19px;
+    left: 740px;
+    top: 303px;
+
+    font-size: 16px;
+    text-align: center;
+}
+
+#boton-banner{
+    position: absolute;
+    width: 95px;
+    height: 19px;
+    left: 790px;
+    top: 349px;
+}
+
+/***Seccion-Body***/
+
+#logo-pata{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+}
+
+#titulo-body{
+    font-size: 40px;
+    text-align: center;
+}
+
+.imagenes-productos{
+    width: 265px;
+    height: 268.86px;   
+}
+
+.texto-productos{
+    font-weight: 500;
+    font-size: 15px;
+
+}
+
+.texto-precios{
+    color: #F0A83E;
+}
+
+/***Seccion-contacto***/
+
+.contacto{
+    text-align: center;
+}
+
+/***Seccion-informacion***/
+
+.informacion{
+    color: #ffffff;
+    background-color: #3C2313;
+}
+
+/***Seccion-footer***/
+
+footer{
+    text-align: center;
+}
