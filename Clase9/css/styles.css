@@ -1,0 +1,42 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    background-color: lightblue;
+    height: 80vh; /*viewport height -- hablo del alto de la pantalla*/
+}
+
+h1{
+    text-align: center;
+    background-color: rgb(194, 194, 194);
+    padding: 50px;
+    width: 350px;
+    margin: 0 auto;
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
+img{
+    /*imagen centrada*/
+    display: block;
+    width: 150px;
+    margin: 25px auto;
+    border-radius: 30vh 50vh ;
+    
+}
+
+.alerta{
+    /*width: 50vw viewport weight*/
+    background-color: rgb(125, 202, 109);
+    border-radius: 0 20px 20px 20px;
+    margin: 10px 40px;
+    padding: 20px;
+    box-shadow: black 2px 2px 12px 1px;
+    /*border: 1px solid black;*/
+}
+
