@@ -1,0 +1,8 @@
+.flotante{
+    background-color: rgb(131,255,127);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 10px;
+    padding: 10px;
+}

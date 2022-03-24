@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navegacion{
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.navegacion ul{
+    color: #f3f3f3;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    padding: 10px;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 100px;
+    background-color: #E5E5E5;
+
+}
+
+.promocion{
+    background-image: url(../images/delivery.jpg);
+    width: 490px;
+    height: 350px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 24px;
+    color: red;
+}
+
+.palabras-clave{
+    color: #FFFFFF;
+}
+
+.podio{
+    background-color: #FFFFFF;
+    width: 490px;
+    height: 350px;
+    padding: 0px 50px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 5px;    
+}
+
+.podio h2{
+    color: red;
+    text-align: center;
+    padding: 30px;
+}
+
+.elementos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elementos img{
+    width: 92px;
+    height: 129px; 
+    
+}
+
+footer{
+    background-color: #222222;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+footer .navegacion{
+    order: -1;
+}
+
+footer .navegacion ul{
+    display: flex;
+    flex-direction: column;
+}
+
+footer img{
+    width: 212px;
+    height: 80px;
+    align-self: center;
+}
