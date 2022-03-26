@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    height: 600px;
+    background-color: blueviolet;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+nav{
+    background-color: grey;
+    display: flex;
+    padding: 10px;
+}
+
+nav img{
+    width: 100% /*ocupa el 100% de su contenedor*/;
+}
+
+.logo{
+    width: 20%;
+    padding: 5px;
+}
+
+.menu{
+    width: 50%;
+    display: flex;
+
+}
+
+menu button{
+    align-self: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.login{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login button{
+    margin-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
