@@ -1,0 +1,29 @@
+BEM
+
+-Bloques -- es la estructura completa
+-Elementos -- aquello que esta dentro del bloque
+-Modificadores -- modificacion a algun elemento o bloque
+
+<header class="cabecera">
+    <img class="cabecera_logo-principal" src="logo.png">
+</header>
+
+En ese caso seria el header el bloque y el logo un elemento
+
+Se denota la clase de un elemento como la clasebloque_elemento
+
+Variables:
+
+--nombre-variable: valor;
+
+se definen dentro del root para que se defina en todo el documento. Tiene mas especificidad que el *
+
+:root{
+   --nombre-variable: valor; 
+}
+para el uso es var(--nombre-variable)
+
+gap - en flex separa la seccion entre los elementos (dentro de un mismo flex).
+
+display= none no muestra el elemento. Desaparece del flujo.
+visibility= hidden lo oculta pero sigue ocupando su lugar.

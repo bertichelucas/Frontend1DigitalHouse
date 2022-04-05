@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!--
+            GET => Los datos se envian por la URL.
+            POST => Los datos viajan en el cuerpo de la peticion.
+
+            readonly= solo lectura
+        -->
+        <form  class="form" action="#" method="GET">
+            <fieldset><!--Para Agrupar elementos de entrada-->
+                <legend>Datos Personales</legend>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="firstname" placeholder="Ingrese su nombre">
+                
+                <label for="apellido">Apellidos:</label>
+                <input type="text" id="apellido" name="lastname" placeholder="Ingrese su apellido" minlength="5" maxlength="15">
+                
+                <label for="documento">DNI:</label>
+                <input type="number" id="documento" name="documento" placeholder="Ingrese documento" min="2" max="20">
+                
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" id="nacimiento" name="fechanacimiento" placeholder="Ingrese fecha de nacimiento" value="2022-04-04" max="2022-04-15">
+                
+                <label for="color">Color de ojos:</label>
+                <input type="color" id="color" name="colordeojos" placeholder="Ingrese color de ojos">
+            
+                <label for="bio">Biografia:</label>
+                <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <fieldset><!--Para Agrupar elementos de entrada-->
+                <legend>Datos usuario</legend>
+                
+                <label for="usuario">Nombre de usuario:</label>
+                <input type="text" id="usuario" name="user" placeholder="Ingrese su usuario">
+                
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" id="contraseña" name="password" placeholder="Ingrese su contraseña">
+            </fieldset>
+
+            <fieldset>
+                <legend>Nacionalidad</legend>
+
+                <label for="Nacionalidad">Nacionalidad:</label>
+                <select name="nacionalidad" id="nacionalidad" required>
+                    <option value="">Seleccione un pais</option>
+                    
+                    <optgroup label="LATAM">
+                        <option value="AR">Argentina</option>
+                        <option value="COL">Colombia</option>
+                        <option value="PER">Peru</option>
+                    </optgroup>
+
+                    <optgroup label="EU">
+                        <option value="ES">España</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+
+            <div class="toolbar">
+                <button type="submit">Enviar Formulario</button>
+                <button type="reset">Limpiar Campos</button>
+            </div>
+            
+            <label for="tyc">Acepta Terminos y Condiciones</label>
+            <input type="checkbox" name="tyc" required>
+        </form>
+
+    </div>
+</body>
+</html>

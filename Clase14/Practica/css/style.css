@@ -1,0 +1,436 @@
+/*** Estilos Generales***/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 400;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-principal: #F0A83E;
+    --color-secundario: #3C2313;
+}
+
+/*** Header***/
+
+/*----BarraSuperior----*/
+.barra-superior{
+    display: none;
+}
+/*----BarraMenu----*/
+
+.barra-menu{
+    background-color: var(--color-principal);
+    color:#FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 10% 2% 5%;
+    height: 5vh;
+}
+
+.barra-menu ul{
+    display: none;
+
+}
+
+.barra-menu li{
+    display: flex;
+    padding: 1% 5%;
+}
+
+li img{
+    padding: 0 3%;
+}
+
+/***Main***/
+
+main{
+    background-color:#E5E5E5 ;
+    color: var(--color-secundario);
+}
+
+/*----Banner----*/
+
+.banner{
+    align-items: center;
+    background-image: url('../images/bowl-and-pet-daities-on-green-background\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+    height: 60vh;
+    padding: 15% 10%;
+    width: 100vw;
+}
+
+.columna{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.letrero{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 2vw 2vh;
+}
+
+.subtitulo{
+    align-self: flex-end;
+}
+
+.columna p{
+    padding: 5%;
+}
+
+.boton{
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    color: #FFFFFF;
+    padding: 5%;
+    align-self: flex-end;
+    margin-right: 2vw;
+}
+
+/*----Cuerpo----*/
+
+.menu{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1vh;
+}
+
+h1{
+    text-align: center;
+    font-size:  40px;
+}
+
+.links{
+    display: flex;
+    justify-content: center;
+}
+
+.links p{
+    color: #666666;
+    font-size: 15px;
+    padding: 5%;
+}
+
+/*--Productos--*/
+
+.productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productos div{
+    align-items: center;
+    background-color: #FBFAF6;
+    display: flex;
+    flex-direction: column;
+    margin: 20vw;
+    padding-bottom: 1%;
+}
+
+
+
+.productos p{
+    font-weight: 500;
+    padding: 2%;
+}
+
+.precio{
+    color: var(--color-principal);
+}
+
+/*--Contacto--*/
+
+.contacto{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contacto h2{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 5vh;
+}
+
+.contacto p{
+    border-radius: 15px;
+    color: #FFFFFF;
+    padding: 1%;
+    margin-top: 1%;
+}
+
+.fill{
+    background-color: var(--color-secundario);
+    font-size: 9px;
+    height: 40px;
+    width: 340px;
+}
+
+
+.botones{
+    align-items: center;
+    display: flex;
+    font-size: 16px;
+    margin: 1%;
+    text-align: center;
+}
+
+.primero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#8A8787 ;
+    height: 38px;
+    width: 110px;
+    margin: 1%;
+}
+
+.segundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-principal);
+    height: 38px;
+    width: 110px;
+    margin: 1%;
+}
+
+
+
+@media screen and (min-width: 800px){
+    .barra-superior{
+        background-color: #222222;
+        color:#F3F3F3;
+        display: flex;
+        justify-content: space-between;
+        padding:0.5% 5% 0.5% 10%;
+    }
+    
+    .barra-superior ul{
+        display: flex;
+    }
+    
+    .barra-superior li{
+        display: flex;
+        padding: 0 3%;
+    }
+    
+    /*----BarraMenu----*/
+    
+    .barra-menu{
+        background-color: var(--color-principal);
+        color:#FFFFFF;
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 10% 2% 5%;
+    }
+    
+    .barra-menu ul{
+        display: flex;
+    }
+    
+    .barra-menu li{
+        display: flex;
+        padding: 1% 5%;
+    }
+    
+    li img{
+        padding: 0 3%;
+    }
+    
+    .logo{
+        height: 3vh;
+        width: 20vh;
+    }
+    
+    .icono-menu{
+        display: none;
+    }
+    /***Main***/
+    
+    main{
+        background-color:#E5E5E5 ;
+        color: var(--color-secundario);
+    }
+    
+    /*----Banner----*/
+    
+    .banner{
+        align-items: center;
+        background-image: url('../images/bowl-and-pet-daities-on-green-background\ 1.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: flex-end;
+        height: 70vh;
+        padding: 15% 10%;
+        width: 100%;
+    }
+    
+    .columna{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .letrero{
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        font-size: 30px;
+        padding: 3% 0%;
+    }
+    
+    .columna p{
+        padding: 5%;
+    }
+    
+    .boton{
+        background-color: var(--color-principal);
+        border-radius: 5px;
+        color: #FFFFFF;
+        padding: 5%;
+    }
+    
+    /*----Cuerpo----*/
+    
+    .menu{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vh;
+    }
+    
+    .menu img{
+        height: 15vh;
+        padding: 1%;
+        width: 8vw;
+    
+    }
+    
+    h1{
+        text-align: center;
+        font-size:  40px;
+    }
+    
+    .links{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .links p{
+        color: #666666;
+        font-size: 15px;
+        padding: 5%;
+    }
+    
+    /*--Productos--*/
+    
+    .productos{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .productos div{
+        align-items: center;
+        background-color: #FBFAF6;
+        display: flex;
+        flex-direction: column;
+        margin: 2%;
+        padding-bottom: 1%;
+    }
+    
+    .productos img{
+        width: 265px;
+        height: 268.86px;
+        
+    }
+    
+    .productos p{
+        font-weight: 500;
+        padding: 2%;
+    }
+    
+    .precio{
+        color: var(--color-principal);
+    }
+    
+    /*--Contacto--*/
+    
+    .contacto{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .contacto h2{
+        font-size: 25px;
+        font-weight: 700;
+    
+    }
+    
+    .contacto p{
+        border-radius: 15px;
+        color: #FFFFFF;
+        padding: 1%;
+        margin-top: 1%;
+    }
+    
+    .fill{
+        background-color: var(--color-secundario);
+        font-size: 9px;
+        height: 40px;
+        width: 340px;
+    }
+    
+    
+    .botones{
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        margin: 1%;
+        text-align: center;
+    }
+    
+    .primero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#8A8787 ;
+        height: 38px;
+        width: 110px;
+        margin: 1%;
+    }
+    
+    .segundo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-principal);
+        height: 38px;
+        width: 110px;
+        margin: 1%;
+    }
+    
+
+}

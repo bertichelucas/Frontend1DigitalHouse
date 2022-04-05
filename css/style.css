@@ -1,0 +1,53 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: salmon;
+    
+}
+
+.container{
+    margin: 3rem auto;
+    width: 60%;
+}
+
+.form{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black;
+    width: 100%;
+    height: 700px;
+    margin: 10px auto;
+    padding: 3rem;
+}
+
+.form fieldset{
+    padding: 1rem;
+}
+
+input, textarea{
+    display: block;
+    margin: 5px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button{
+    margin: 2vw;
+}
