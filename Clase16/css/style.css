@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.link{
+    border: 1px solid lightgray;
+    display: block;
+    color: white;
+    padding: 20px;
+    background-color: tomato;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link:visited{
+    background-color: crimson;
+    color: black;
+}
+
+.link:hover{
+    padding: 40px;
+    transition: 0.3s;
+}
+
+.link:active{
+    background-color: steelblue;
+}
+
+#objetivo{
+    background-color: steelblue;
+    width: 200px;
+    height: 200px;
+}
+
+#objetivo:target{
+    /*cuando está siendo seleccionado por
+    algun boton */
+    margin-left: 100px;
+}
+
+form{
+    background-color: #f2f2f2;
+    margin: 30px auto;
+    padding: 40px;
+    width: 50%;
+}
+
+input{
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+input:focus{
+    background-color: lightgray;
+    outline: none;
+    border: none;
+}
+
+form:focus-within{
+    /*Afecta al padre cuando uno de sus hijos
+    tiene el focus adentro.*/
+    background-color: tomato;
+}
+
+a:not(.link){
+    /*Esto afecta a aquellos a que no tengan la 
+    clase link.*/
+    display: block;
+    text-align: center;
+    margin: 10px auto;
+    
+}
+
+body{
+    padding: 10px;
+}
+
+.conteiner{
+    border: 2px tomato solid;
+    margin-left: 5px;
+    width: 80%;
+    padding: 20px;
+    margin-top: 2px;
+}
+
+.box{
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    border: 1px black solid;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+}
+
+.box:only-of-type{
+    /*Only of type afecta a aquellos elementos que dentro del
+    padre sean únicos.*/
+    background-color: tomato;
+}
+
+.box:last-of-type{
+    /*afecta a aquellos elementos que sean últimos en su tipo
+    dentro de su contenedor padre*/
+    color: black;
+}
+
+.box:first-of-type{
+    /*análogo a last of type*/
+    width: 10%;
+}
+
+.box:nth-of-type(2){
+    /*Afecta al de la enesima posicion de su tipo
+    dentro de un contenedor padre.*/
+    background-color: grey;
+}
+
+.box:only-child{
+    font-style: italic;
+}
+
+/*. last-child
+    first-child
+    nth-of-child
+    Tanto estos ps como los anteriores pueden
+    recibir odd even.
+*/
+
+/***IMPORTANTE
+
+.box:only-child no es lo mismo que
+.box :only-child --> Estas dos son dos clases seperadas,
+hace referencia a los hijos dentro de box
+
+***/
+
+p::selection{
+    background-color: crimson;
+}
+
+p::first-letter{
+    /*tambien existe first line*/
+    font-size: 30px;
+}
+
+input::placeholder{
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+
+.price{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.price::before{
+    content: "$";
+}
