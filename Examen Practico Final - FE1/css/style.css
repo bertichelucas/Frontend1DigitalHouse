@@ -72,6 +72,7 @@ h1{
 p{
     color: var(--color-textos);
     font-size: 1.0rem;
+    line-height: 2.5vh;
     padding-top: 1vh;
     text-align: center;
 }
@@ -98,7 +99,7 @@ button{
     font-size: 0.9rem;
 }
 
-        /*INTRODUCCION*/
+/*INTRODUCCION*/
 .introduccion{
     padding: 0 10vw 5vh;
 }
@@ -108,20 +109,31 @@ button{
     text-align: center;
 }
 
-        /*LISTA PUNTOS*/
+/*LISTA PUNTOS*/
 .lista-puntos{
     padding-bottom: 5vh;
+}
+
+.lista-puntos span{
+    background-color: var(--color-secundario);
+    border-radius: 30px;
+    border-style: hidden;
+    color: var(--color-botones);
+    padding: 1vh 4.5vw 1vh 4.5vw;
+    margin: 0vh 2vw 0vh -14vw;
 }
 
 .lista-puntos h4{
     background-color: var(--color-fondo-titulos);
     margin-left: 15vw;
-    padding: 1vh 0vw 1vh 10vw;
+    padding: 1vh 0vw 1vh 3vw;
 }
 
 .lista-puntos p{
     padding-left: 4vw;
+    padding-bottom: 6vh;
     text-align: left;
+
 }
 
 /***SECCION TESTIMONIOS***/
@@ -138,18 +150,29 @@ button{
     margin-bottom: 5vh;
 }
 
-.seccion-testimonios img{
-    padding: 2vh 0;
+.personas-info{
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 2vw;
+    margin: 0 3vw;
 }
 
-.seccion-testimonios h6{
+.testimonios-personas img{
+    width: 70px;
+    position: relative;
+    top: 35px;
+}
+
+.personas-info h6{
     font-size: 1.05rem;
 }
 
 .persona1{
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .persona2, .persona3{
@@ -162,10 +185,25 @@ button{
 }
 
 .botones-radio input{
-    border: 2px solid red;
     margin: 0 1vw;
 }
 
+.botones-radio input::after{
+    top: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    border: 2px solid var(--color-secundario);
+}
+
+.botones-radio input:checked::after{
+    background-color: var(--color-secundario);
+}
 /***SECCION BANNER INFERIOR***/
 
 .banner-inferior{
@@ -189,26 +227,30 @@ button{
 /***SECCION FOOTER***/
 
 footer{
+    align-items: center;
     background-color: var(--color-fondo-footer);
+    display: flex;
+    flex-direction: column;
+    
 }
 
 footer input{
     border-radius: 30px;
-    padding: 3vh 2vw;
-    
+    border-style: hidden;
+    padding: 2vh 10vw;
+    margin: 7vh 0;
 }
 
-footer input::after{
-    content: 'GO';
-    width: 4vw;
-    border: 1px red solid;
+footer button{
+    font-weight: bold;
+    margin: 0 1vw;
 }
 
+/*NAVEGADOR*/
 footer nav{
     background-color: var(--color-fondo-footer);
     display: flex;
     flex-direction: row;
-    border: 1px blue solid;
 }
 
 .columnas{
@@ -222,3 +264,35 @@ footer nav{
     padding: 1vh 0;
     text-decoration: none;
 }
+
+/*LOGO*/
+
+footer h2{
+    color: var(--color-botones);
+    font-weight: 500;
+    padding: 4vh 0;
+}
+
+footer h2::before{
+    content: url('../imagenes/icono-titulo.png');
+    margin-right: 1vw;
+}
+
+footer p{
+    color: var(--color-textos);
+    font-size: 0.75rem;
+    padding: 5vh 0;
+}
+
+/*ICONOS*/
+
+.iconos{
+    display: flex;
+}
+
+.iconos i{
+    font-size: 2rem;
+    color: var(--color-botones);
+    padding: 0 4vw;
+}
+
