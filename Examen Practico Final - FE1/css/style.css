@@ -1,0 +1,224 @@
+/***SECCION GENERAL***/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primario: rgb(35, 44, 81) /*AZUL*/;
+    --color-secundario: rgb(242, 95, 58) /*NARANJA*/;
+
+    --color-textos: rgb(143, 148, 167) /*GRIS*/;
+    --color-botones: rgb(249, 249, 249) /*BLANCO*/;
+    --color-fondo-titulos: rgb(255, 239, 234) /*NARANJA CLARO*/;
+    --color-fondo-footer: rgb(29, 30, 37) /*AZUL OSCURO*/;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+/***SECCION HEADER***/
+
+header{
+    align-items: center;
+    color: var(--color-primario);
+    display: flex;
+    padding: 5vh 7vw;
+    justify-content: space-between;
+}
+
+header h2::before{
+    content: url('../imagenes/icono-titulo.png');
+    margin-right: 1vw;
+}
+
+header nav{
+    display: none;
+}
+
+/*** SECCION BANNER***/
+
+.banner{
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-imagenes{
+    background-image: url('../imagenes/illustration-intro.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: 100vw;
+}
+
+.banner-texto{
+    padding: 0 10vw 2vh;
+    text-align: center;
+}
+
+h1{
+    color: var(--color-primario);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+p{
+    color: var(--color-textos);
+    font-size: 1.0rem;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+button{
+    background-color: var(--color-secundario);
+    border-radius: 30px;
+    border-style: hidden;
+    color: var(--color-botones);
+    padding: 2vh 7vw;
+    margin: 4.5vh 0;
+}
+
+/*** SECCION SOBRE NOSOTROS***/
+
+.sobre-nosotros{
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sobre-nosotros p{
+    font-size: 0.9rem;
+}
+
+        /*INTRODUCCION*/
+.introduccion{
+    padding: 0 10vw 5vh;
+}
+
+.introduccion h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+        /*LISTA PUNTOS*/
+.lista-puntos{
+    padding-bottom: 5vh;
+}
+
+.lista-puntos h4{
+    background-color: var(--color-fondo-titulos);
+    margin-left: 15vw;
+    padding: 1vh 0vw 1vh 10vw;
+}
+
+.lista-puntos p{
+    padding-left: 4vw;
+    text-align: left;
+}
+
+/***SECCION TESTIMONIOS***/
+
+.seccion-testimonios{
+    align-items: center;
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-testimonios h3{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+.seccion-testimonios img{
+    padding: 2vh 0;
+}
+
+.seccion-testimonios h6{
+    font-size: 1.05rem;
+}
+
+.persona1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.persona2, .persona3{
+    display: none;
+}
+
+.botones-radio{
+    display: flex;
+    padding: 8vh 0 0vh 0;
+}
+
+.botones-radio input{
+    border: 2px solid red;
+    margin: 0 1vw;
+}
+
+/***SECCION BANNER INFERIOR***/
+
+.banner-inferior{
+    background-color: var(--color-secundario);
+    font-size: 1.6rem;
+    font-style: normal;
+    padding: 10vh 5vw 5vh;
+    text-align: center;
+}
+
+.banner-inferior h2{
+    color: var(--color-botones);
+}
+
+.banner-inferior button{
+    background-color: var(--color-botones);
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+/***SECCION FOOTER***/
+
+footer{
+    background-color: var(--color-fondo-footer);
+}
+
+footer input{
+    border-radius: 30px;
+    padding: 3vh 2vw;
+    
+}
+
+footer input::after{
+    content: 'GO';
+    width: 4vw;
+    border: 1px red solid;
+}
+
+footer nav{
+    background-color: var(--color-fondo-footer);
+    display: flex;
+    flex-direction: row;
+    border: 1px blue solid;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 12vw;
+}
+
+.columnas a{
+    color: var(--color-botones);
+    padding: 1vh 0;
+    text-decoration: none;
+}
