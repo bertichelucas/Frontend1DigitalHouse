@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 60px auto;
+    outline: 2px solid steelblue;
+    width: 80%;
+    height: 60vh;
+}
+
+.box{
+    background-color: orangered;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    transition-property: transform, background-color;
+    transition-duration: 0.5s, 1s;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.box2{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+
+.container:hover .box{
+    /*Esto me sirve para: mover todas las box que esten
+    dentro de container mientras que el cursor este sobre el container*/
+    transform: translate(100px, 250px) rotate(45deg);
+    background-color: blueviolet;
+}
+
+.container:hover .box2{
+    transform: scale(0.5,0.5); 
+    /*Los parametros de scale son multiplicadores*/
+    transform: skew(45deg, 10deg);
+}
+
+.peter{
+    animation-name: peterparker;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes peterparker {
+    0%{
+        transform: translateY(-250px);
+    }
+
+    70%{
+        transform: rotate(25deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
