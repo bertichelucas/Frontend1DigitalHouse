@@ -1,41 +1,20 @@
-/***SECCION GENERAL***/
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+/*
+    El estilo de escritorio está diseñado especialmente
+    para la resoulcion de 1440px dada en la consigna.
+*/
 
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+@media screen and (min-width: 1200px){
 
-:root{
-    --color-primario: rgb(35, 44, 81) /*AZUL*/;
-    --color-secundario: rgb(242, 95, 58) /*boton-naranja*/;
-
-    --color-textos: rgb(143, 148, 167) /*GRIS*/;
-    --color-botones: rgb(249, 249, 249) /*BLANCO*/;
-    --color-fondo-titulos: rgb(255, 239, 234) /*boton-naranja CLARO*/;
-    --color-fondo-footer: rgb(29, 30, 37) /*AZUL OSCURO*/;
-}
-
-body{
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-size: 16px;
-}
-
-/*PSEUDOSELECTOR GENERAL*/
-.boton-naranja:hover{
-    filter: opacity(50%);
-}
-
-/***SECCION HEADER***/
+    /***SECCION HEADER***/
 
 header{
     align-items: center;
     color: var(--color-primario);
     display: flex;
-    padding: 5vh 7vw;
+    padding: 6vh 16vw 6vh 10vw;
     justify-content: space-between;
+    margin: 0 3vw;
 }
 
 header h2::before{
@@ -44,52 +23,71 @@ header h2::before{
 }
 
 header nav{
-    display: none;
+    display: flex;
+}
+
+header a{
+    color: var(--color-primario);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0 1vw;
+}
+
+header a:hover{
+    filter: opacity(50%);
 }
 
 header img{
-    padding-right: 4vw;
+    display: none;
 }
 
 header button{
-    display: none;
+    display: block;
 }
 
 /*** SECCION BANNER***/
 
 .banner{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 14vw 0 7vw;
+    flex-direction: row;
 }
 
 .banner-imagenes{
+    align-self: center;
     background-image: url('../imagenes/illustration-intro.svg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 70vh;
-    width: 90vw;
+    height: 80vh;
+    order: 1;
+    width: 50vw;
 }
 
 .banner-texto{
-    padding: 0 3vw 2vh;
-    text-align: center;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    order: 0;
+    text-align: left;
+    width: 50vw;
 }
 
 h1{
     color: var(--color-primario);
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 900;
+    padding: 5vh 0;
 }
 
 p{
     color: var(--color-textos);
-    font-size: 0.9rem;
-    line-height: 5vh;
+    font-size: 1.0rem;
+    line-height: 4vh;
     padding-top: 1vh;
-    text-align: center;
+    text-align: left;
+    width: 80%;
 }
 
 button{
@@ -97,8 +95,12 @@ button{
     border-radius: 30px;
     border-style: hidden;
     color: var(--color-botones);
-    padding: 2vh 7vw;
+    padding: 2vh 2vw;
     margin: 4.5vh 0;
+}
+
+.banner button:hover{
+    filter: opacity(50%);
 }
 
 /*** SECCION SOBRE NOSOTROS***/
@@ -106,27 +108,38 @@ button{
 .sobre-nosotros{
     color: var(--color-primario);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    padding: 10vh 0 10vh 0;
+    margin: 0 14vw 0 7vw;
 }
 
 .sobre-nosotros p{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 /*INTRODUCCION*/
 .introduccion{
-    margin: 0 14vw 5vh 7vw;
+    width: 50vw;
+    margin: 0 3vw;
 }
 
 .introduccion h2{
-    font-size: 1.8rem;
-    text-align: center;
+    font-size: 1.9rem;
+    text-align: left;
+    padding-bottom: 5vh;
+}
+
+.introduccion p{
+    width: 69%;
 }
 
 /*LISTA PUNTOS*/
 .lista-puntos{
     padding-bottom: 5vh;
+    padding-left: 3vw;
+    width: 50vw;
+    margin: 0 3vw;
 }
 
 .lista-puntos span{
@@ -134,21 +147,21 @@ button{
     border-radius: 30px;
     border-style: hidden;
     color: var(--color-botones);
-    padding: 1vh 4.5vw 1vh 4.5vw;
+    padding: 2vh 2vw 2vh 2vw;
     margin: 0vh 2vw 0vh -14vw;
 }
 
 .lista-puntos h4{
-    background-color: var(--color-fondo-titulos);
-    margin-left: 15vw;
-    padding: 1vh 0vw 1vh 3vw;
+    background-color: white;
+    margin-left: 4vw;
+    padding: 1vh 0vw 1vh 6.5vw;
 }
 
 .lista-puntos p{
-    font-size: 0.8rem;
-    padding: 1.5vh 0vw 6vh 4vw;
+    padding-left: 4vw;
+    padding-bottom: 6vh;
     text-align: left;
-    width: 90%;
+    width: 100%;
 }
 
 /***SECCION TESTIMONIOS***/
@@ -158,7 +171,8 @@ button{
     color: var(--color-primario);
     display: flex;
     flex-direction: column;
-    margin: 0 6vw 0 3vw;
+    justify-content: center;
+    padding-bottom: 15vh;
 }
 
 .seccion-testimonios h3{
@@ -166,13 +180,11 @@ button{
     margin-bottom: 5vh;
 }
 
-.personas-info{
-    align-items: center;
-    background-color: #FAFAFA;
+.testimonios-personas{
     display: flex;
-    flex-direction: column;
-    padding: 8vh 2vw;
-    margin: 0 3vw;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0vw;
 }
 
 .testimonios-personas img{
@@ -181,44 +193,37 @@ button{
     top: 35px;
 }
 
-.personas-info h6{
-    font-size: 1.05rem;
-}
-
-.persona1{
+.personas{
     align-items: center;
     display: flex;
     flex-direction: column;
 }
 
-.persona2, .persona3{
-    display: none;
+.persona2{
+    order: -1;
 }
 
-.botones-radio{
+.personas-info{
+    align-items: center;
+    background-color: #FAFAFA;
     display: flex;
-    padding: 8vh 0 0vh 0;
-}
-
-.botones-radio input{
+    flex-direction: column;
+    padding: 8vh 3vw;
     margin: 0 1vw;
 }
 
-.botones-radio input::after{
-    top: -1px;
-    position: relative;
-    background-color: white;
-    content: '';
-    display: inline-block;
-    visibility: visible;
-    width: 11px;
-    height: 11px;
-    border-radius: 15px;
-    border: 2px solid var(--color-secundario);
+.personas-info h6{
+    font-size: 1.05rem;
 }
 
-.botones-radio input:checked::after{
-    background-color: var(--color-secundario);
+.personas-info p{
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+}
+
+.botones-radio{
+    display: none;
 }
 
 
@@ -227,21 +232,30 @@ button{
 .banner-inferior{
     background-color: var(--color-secundario);
     display: flex;
-    flex-direction: column;
     font-size: 1.6rem;
     font-style: normal;
-    padding: 10vh 8vw 5vh 4vw;
+    flex-direction: row;
+    padding: 7vh 10vw 7vh;
     text-align: center;
 }
 
+.banner-inferior div{
+    width: 50%;
+}
+
 .banner-inferior h2{
+    align-self: flex-start;
     color: var(--color-botones);
+    text-align: left;
+    width: 90%;
 }
 
 .banner-inferior button{
     background-color: var(--color-botones);
     color: var(--color-secundario);
     font-weight: 700;
+    margin-left: 15vw;
+    padding: 2vh 2vw;
 }
 
 .banner-inferior button:hover{
@@ -251,23 +265,29 @@ button{
 /***SECCION FOOTER***/
 
 footer{
-    align-items: center;
+    align-items: flex-start;
     background-color: var(--color-fondo-footer);
     display: flex;
-    flex-direction: column;
-    padding: 0 10vw 0 5vw;
+    flex-direction: row;
+    padding: 10vh 10vw 4vh;
+}
+
+footer form{
+    display: flex;
+    
 }
 
 footer input{
     border-radius: 30px;
     border-style: hidden;
-    padding: 2vh;
-    margin: 7vh 0;
+    padding: 2vh 1vw;
+    margin: 0vh 0 0vh; 
 }
 
 footer button{
     font-weight: bold;
     margin: 0 1vw;
+    padding: 2vh 1.5vw;
 }
 
 footer button:hover{
@@ -275,9 +295,9 @@ footer button:hover{
 }
 
 .columna-escritorio{
-    align-items: center;
     display: flex;
     flex-direction: column;
+    order: -2;
 }
 
 /*NAVEGADOR*/
@@ -285,18 +305,20 @@ footer nav{
     background-color: var(--color-fondo-footer);
     display: flex;
     flex-direction: row;
+    order: -1;
 }
 
 .columnas{
     display: flex;
     flex-direction: column;
-    padding: 5vh 12vw;
+    padding: 2vh 8vw 5vh 5vw;
 }
 
 .columnas a{
     color: var(--color-botones);
-    padding: 1vh 0;
+    padding: 1vh 5vw 1vh 0;
     text-decoration: none;
+    width: 120%;
 }
 
 .columnas a:hover{
@@ -308,7 +330,8 @@ footer nav{
 footer h2{
     color: var(--color-botones);
     font-weight: 500;
-    padding: 4vh 0;
+    padding: 0vh 0 15vh;
+    order: -1;
 }
 
 footer h2::before{
@@ -317,6 +340,7 @@ footer h2::before{
 }
 
 footer p{
+    display: none;
     color: var(--color-textos);
     font-size: 0.75rem;
     padding: 5vh 0;
@@ -326,17 +350,17 @@ footer p{
 
 .iconos{
     display: flex;
+    justify-content: space-between;
 }
 
 .iconos i{
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--color-botones);
-    padding: 0 4vw;
+    padding: 0 1vw 0 0;
 }
 
 i:hover{
     color:  var(--color-secundario);
 }
 
-
-
+}
