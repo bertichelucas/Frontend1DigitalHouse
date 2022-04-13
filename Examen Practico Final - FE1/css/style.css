@@ -34,8 +34,8 @@ header{
     align-items: center;
     color: var(--color-primario);
     display: flex;
-    padding: 5vh 7vw;
     justify-content: space-between;
+    padding: 5vh 7vw;
 }
 
 header h2::before{
@@ -61,7 +61,7 @@ header button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 14vw 0 7vw;
+    margin: 0 7vw;
 }
 
 .banner-imagenes{
@@ -69,7 +69,7 @@ header button{
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    height: 70vh;
+    height: 40vh;
     width: 90vw;
 }
 
@@ -87,7 +87,7 @@ h1{
 p{
     color: var(--color-textos);
     font-size: 0.9rem;
-    line-height: 5vh;
+    line-height: 200%;
     padding-top: 1vh;
     text-align: center;
 }
@@ -97,7 +97,7 @@ button{
     border-radius: 30px;
     border-style: hidden;
     color: var(--color-botones);
-    padding: 2vh 7vw;
+    padding: 2vh 10vw;
     margin: 4.5vh 0;
 }
 
@@ -110,13 +110,9 @@ button{
     justify-content: center;
 }
 
-.sobre-nosotros p{
-    font-size: 0.85rem;
-}
-
 /*INTRODUCCION*/
 .introduccion{
-    margin: 0 14vw 5vh 7vw;
+    margin: 0 7vw 5vh;
 }
 
 .introduccion h2{
@@ -158,12 +154,28 @@ button{
     color: var(--color-primario);
     display: flex;
     flex-direction: column;
-    margin: 0 6vw 0 3vw;
+    margin: 0 3vw;
 }
 
 .seccion-testimonios h3{
     font-size: 2rem;
     margin-bottom: 5vh;
+}
+
+.testimonios-personas img{
+    width: 70px;
+    position: relative;
+    top: 35px;
+}
+
+.persona1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.persona2, .persona3{
+    display: none;
 }
 
 .personas-info{
@@ -175,24 +187,8 @@ button{
     margin: 0 3vw;
 }
 
-.testimonios-personas img{
-    width: 70px;
-    position: relative;
-    top: 35px;
-}
-
 .personas-info h6{
     font-size: 1.05rem;
-}
-
-.persona1{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.persona2, .persona3{
-    display: none;
 }
 
 .botones-radio{
@@ -220,7 +216,6 @@ button{
 .botones-radio input:checked::after{
     background-color: var(--color-secundario);
 }
-
 
 /***SECCION BANNER INFERIOR***/
 
@@ -255,7 +250,7 @@ footer{
     background-color: var(--color-fondo-footer);
     display: flex;
     flex-direction: column;
-    padding: 0 10vw 0 5vw;
+    padding: 0 5vw;
 }
 
 footer input{

@@ -9,17 +9,8 @@
     /***SECCION HEADER***/
 
 header{
-    align-items: center;
-    color: var(--color-primario);
-    display: flex;
-    padding: 6vh 16vw 6vh 10vw;
-    justify-content: space-between;
     margin: 0 3vw;
-}
-
-header h2::before{
-    content: url('../imagenes/icono-titulo.png');
-    margin-right: 1vw;
+    padding: 6vh 10vw;
 }
 
 header nav{
@@ -49,16 +40,11 @@ header button{
 /*** SECCION BANNER***/
 
 .banner{
-    display: flex;
     flex-direction: row;
 }
 
 .banner-imagenes{
     align-self: center;
-    background-image: url('../imagenes/illustration-intro.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
     height: 80vh;
     order: 1;
     width: 50vw;
@@ -75,41 +61,25 @@ header button{
 }
 
 h1{
-    color: var(--color-primario);
     font-size: 3rem;
-    font-weight: 900;
     padding: 5vh 0;
 }
 
 p{
-    color: var(--color-textos);
     font-size: 1.0rem;
     line-height: 4vh;
-    padding-top: 1vh;
     text-align: left;
     width: 80%;
 }
 
 button{
-    background-color: var(--color-secundario);
-    border-radius: 30px;
-    border-style: hidden;
-    color: var(--color-botones);
     padding: 2vh 2vw;
-    margin: 4.5vh 0;
-}
-
-.banner button:hover{
-    filter: opacity(50%);
 }
 
 /*** SECCION SOBRE NOSOTROS***/
 
 .sobre-nosotros{
-    color: var(--color-primario);
-    display: flex;
     flex-direction: row;
-    justify-content: center;
     padding: 10vh 0 10vh 0;
     margin: 0 14vw 0 7vw;
 }
@@ -143,12 +113,7 @@ button{
 }
 
 .lista-puntos span{
-    background-color: var(--color-secundario);
-    border-radius: 30px;
-    border-style: hidden;
-    color: var(--color-botones);
     padding: 2vh 2vw 2vh 2vw;
-    margin: 0vh 2vw 0vh -14vw;
 }
 
 .lista-puntos h4{
@@ -158,26 +123,14 @@ button{
 }
 
 .lista-puntos p{
-    padding-left: 4vw;
-    padding-bottom: 6vh;
-    text-align: left;
     width: 100%;
 }
 
 /***SECCION TESTIMONIOS***/
 
 .seccion-testimonios{
-    align-items: center;
-    color: var(--color-primario);
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     padding-bottom: 15vh;
-}
-
-.seccion-testimonios h3{
-    font-size: 2rem;
-    margin-bottom: 5vh;
 }
 
 .testimonios-personas{
@@ -204,16 +157,8 @@ button{
 }
 
 .personas-info{
-    align-items: center;
-    background-color: #FAFAFA;
-    display: flex;
-    flex-direction: column;
     padding: 8vh 3vw;
     margin: 0 1vw;
-}
-
-.personas-info h6{
-    font-size: 1.05rem;
 }
 
 .personas-info p{
@@ -226,17 +171,11 @@ button{
     display: none;
 }
 
-
 /***SECCION BANNER INFERIOR***/
 
 .banner-inferior{
-    background-color: var(--color-secundario);
-    display: flex;
-    font-size: 1.6rem;
-    font-style: normal;
     flex-direction: row;
     padding: 7vh 10vw 7vh;
-    text-align: center;
 }
 
 .banner-inferior div{
@@ -245,29 +184,19 @@ button{
 
 .banner-inferior h2{
     align-self: flex-start;
-    color: var(--color-botones);
     text-align: left;
     width: 90%;
 }
 
 .banner-inferior button{
-    background-color: var(--color-botones);
-    color: var(--color-secundario);
-    font-weight: 700;
     margin-left: 15vw;
     padding: 2vh 2vw;
-}
-
-.banner-inferior button:hover{
-    color: rgb(212, 171, 160);
 }
 
 /***SECCION FOOTER***/
 
 footer{
     align-items: flex-start;
-    background-color: var(--color-fondo-footer);
-    display: flex;
     flex-direction: row;
     padding: 10vh 10vw 4vh;
 }
@@ -278,89 +207,53 @@ footer form{
 }
 
 footer input{
-    border-radius: 30px;
-    border-style: hidden;
     padding: 2vh 1vw;
     margin: 0vh 0 0vh; 
 }
 
 footer button{
-    font-weight: bold;
-    margin: 0 1vw;
     padding: 2vh 1.5vw;
 }
 
-footer button:hover{
-    filter: opacity(25%);
-}
-
 .columna-escritorio{
-    display: flex;
-    flex-direction: column;
     order: -2;
 }
 
 /*NAVEGADOR*/
 footer nav{
-    background-color: var(--color-fondo-footer);
-    display: flex;
-    flex-direction: row;
     order: -1;
 }
 
 .columnas{
-    display: flex;
-    flex-direction: column;
     padding: 2vh 8vw 5vh 5vw;
 }
 
 .columnas a{
-    color: var(--color-botones);
     padding: 1vh 5vw 1vh 0;
-    text-decoration: none;
     width: 120%;
-}
-
-.columnas a:hover{
-    color: var(--color-secundario);
 }
 
 /*LOGO*/
 
 footer h2{
-    color: var(--color-botones);
-    font-weight: 500;
     padding: 0vh 0 15vh;
     order: -1;
 }
 
-footer h2::before{
-    content: url('../imagenes/icono-titulo.png');
-    margin-right: 1vw;
-}
-
 footer p{
     display: none;
-    color: var(--color-textos);
-    font-size: 0.75rem;
-    padding: 5vh 0;
 }
 
 /*ICONOS*/
 
 .iconos{
-    display: flex;
     justify-content: space-between;
 }
 
 .iconos i{
     font-size: 1rem;
-    color: var(--color-botones);
     padding: 0 1vw 0 0;
 }
 
-i:hover{
-    color:  var(--color-secundario);
-}
 
 }
