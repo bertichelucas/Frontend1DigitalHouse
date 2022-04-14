@@ -241,7 +241,11 @@ footer h2{
 }
 
 footer p{
-    display: none;
+    border: solid red 1px;
+    position: relative;
+    right: 15vw;
+    top: 10vh;
+    white-space: nowrap;
 }
 
 /*ICONOS*/
