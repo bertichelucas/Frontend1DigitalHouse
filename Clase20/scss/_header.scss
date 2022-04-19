@@ -1,0 +1,24 @@
+
+header{
+    margin-bottom: 2rem;
+    nav{
+        padding-top: 1rem;
+        ul{
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            
+            a{  
+                padding: 1.5rem;
+                color: white;
+                text-decoration: none;
+                background-color: $color-primario;
+                border-radius: 10px;
+
+                &:hover{
+                    background-color: $color-secundario;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+/*
+    el archivo principal  es nombre.scss
+
+    Los Partials son los diferentes archivos 
+    que se escriben _parcial.scss
+*/
+@import "variables";
+@import "funciones";
+@import "base";
+@import "header";
+
+%btn_padre{
+    /*Herencia - Superclase PO*/
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.btn-send{
+    @extend %btn_padre;
+    @include colorBoton($color-primario, white, 3rem);
+}
+
+.btn-reset{
+    @extend %btn_padre;
+    @include colorBoton($color-secundario, black);
+}

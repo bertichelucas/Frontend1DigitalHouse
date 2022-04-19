@@ -1,0 +1,53 @@
+/*
+    el archivo principal  es nombre.scss
+
+    Los Partials son los diferentes archivos 
+    que se escriben _parcial.scss
+*/
+header {
+  margin-bottom: 2rem;
+}
+
+header nav {
+  padding-top: 1rem;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+header nav ul a {
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+  background-color: red;
+  border-radius: 10px;
+}
+
+header nav ul a:hover {
+  background-color: blue;
+}
+
+.btn-send, .btn-reset {
+  /*Herencia - Superclase PO*/
+  height: 40px;
+  width: 100px;
+  border-radius: 10px;
+}
+
+.btn-send {
+  background-color: red;
+  color: white;
+  padding: 3rem;
+}
+
+.btn-reset {
+  background-color: blue;
+  color: black;
+  padding: 0.5rem;
+}
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,5 @@
+@mixin colorBoton($colorFondo, $colorTexto, $Relleno:0.5rem) {
+    background-color: $colorFondo;
+    color: $colorTexto;
+    padding: $Relleno;
+}
