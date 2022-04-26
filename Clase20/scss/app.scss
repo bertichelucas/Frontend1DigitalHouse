@@ -25,3 +25,20 @@
     @extend %btn_padre;
     @include colorBoton($color-secundario, black);
 }
+
+$enviornment: development;
+
+p{
+    color: blue;
+    text-align: center;
+    font-size: 10px;
+    @if $enviornment == development{
+        font-size: 50px; 
+    }
+}
+
+@for $i from 1 to 3{
+    .todos-#{$i}{
+        width: 2rem*$i;
+    }
+}

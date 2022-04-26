@@ -50,4 +50,19 @@ header nav ul a:hover {
   color: black;
   padding: 0.5rem;
 }
+
+p {
+  color: blue;
+  text-align: center;
+  font-size: 10px;
+  font-size: 50px;
+}
+
+.todos-1 {
+  width: 2rem;
+}
+
+.todos-2 {
+  width: 4rem;
+}
 /*# sourceMappingURL=app.css.map */
