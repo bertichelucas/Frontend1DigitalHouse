@@ -1,0 +1,337 @@
+/***SECCION GENERAL***/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-primario: rgb(35, 44, 81) /*AZUL*/;
+    --color-secundario: rgb(242, 95, 58) /*boton-naranja*/;
+
+    --color-textos: rgb(143, 148, 167) /*GRIS*/;
+    --color-botones: rgb(249, 249, 249) /*BLANCO*/;
+    --color-fondo-titulos: rgb(255, 239, 234) /*boton-naranja CLARO*/;
+    --color-fondo-footer: rgb(29, 30, 37) /*AZUL OSCURO*/;
+}
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+}
+
+/*PSEUDOSELECTOR GENERAL*/
+.boton-naranja:hover{
+    filter: opacity(50%);
+}
+
+/***SECCION HEADER***/
+
+header{
+    align-items: center;
+    color: var(--color-primario);
+    display: flex;
+    justify-content: space-between;
+    padding: 5vh 7vw;
+}
+
+header h2::before{
+    content: url('../imagenes/icono-titulo.png');
+    margin-right: 1vw;
+}
+
+header nav{
+    display: none;
+}
+
+header img{
+    padding-right: 4vw;
+}
+
+header button{
+    display: none;
+}
+
+/*** SECCION BANNER***/
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 7vw;
+}
+
+.banner-imagenes{
+    background-image: url('../imagenes/illustration-intro.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 40vh;
+    width: 90vw;
+}
+
+.banner-texto{
+    padding: 0 3vw 2vh;
+    text-align: center;
+}
+
+h1{
+    color: var(--color-primario);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+p{
+    color: var(--color-textos);
+    font-size: 0.9rem;
+    line-height: 200%;
+    padding-top: 1vh;
+    text-align: center;
+}
+
+button{
+    background-color: var(--color-secundario);
+    border-radius: 30px;
+    border-style: hidden;
+    color: var(--color-botones);
+    padding: 2vh 10vw;
+    margin: 4.5vh 0;
+}
+
+/*** SECCION SOBRE NOSOTROS***/
+
+.sobre-nosotros{
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*INTRODUCCION*/
+.introduccion{
+    margin: 0 7vw 5vh;
+}
+
+.introduccion h2{
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+/*LISTA PUNTOS*/
+.lista-puntos{
+    padding-bottom: 5vh;
+}
+
+.lista-puntos span{
+    background-color: var(--color-secundario);
+    border-radius: 30px;
+    border-style: hidden;
+    color: var(--color-botones);
+    padding: 1vh 4.5vw 1vh 4.5vw;
+    margin: 0vh 2vw 0vh -14vw;
+}
+
+.lista-puntos h4{
+    background-color: var(--color-fondo-titulos);
+    margin-left: 15vw;
+    padding: 1vh 0vw 1vh 3vw;
+}
+
+.lista-puntos p{
+    font-size: 0.8rem;
+    padding: 1.5vh 0vw 6vh 4vw;
+    text-align: left;
+    width: 90%;
+}
+
+/***SECCION TESTIMONIOS***/
+
+.seccion-testimonios{
+    align-items: center;
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: column;
+    margin: 0 3vw;
+}
+
+.seccion-testimonios h3{
+    font-size: 2rem;
+    margin-bottom: 5vh;
+}
+
+.testimonios-personas img{
+    width: 70px;
+    position: relative;
+    top: 35px;
+}
+
+.persona1{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.persona2, .persona3{
+    display: none;
+}
+
+.personas-info{
+    align-items: center;
+    background-color: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    padding: 8vh 2vw;
+    margin: 0 3vw;
+}
+
+.personas-info h6{
+    font-size: 1.05rem;
+}
+
+.botones-radio{
+    display: flex;
+    padding: 8vh 0 0vh 0;
+}
+
+.botones-radio input{
+    margin: 0 1vw;
+}
+
+.botones-radio input::after{
+    top: -1px;
+    position: relative;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    width: 11px;
+    height: 11px;
+    border-radius: 15px;
+    border: 2px solid var(--color-secundario);
+}
+
+.botones-radio input:checked::after{
+    background-color: var(--color-secundario);
+}
+
+/***SECCION BANNER INFERIOR***/
+
+.banner-inferior{
+    background-color: var(--color-secundario);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-style: normal;
+    padding: 10vh 8vw 5vh 4vw;
+    text-align: center;
+}
+
+.banner-inferior h2{
+    color: var(--color-botones);
+}
+
+.banner-inferior button{
+    background-color: var(--color-botones);
+    color: var(--color-secundario);
+    font-weight: 700;
+}
+
+.banner-inferior button:hover{
+    color: rgb(212, 171, 160);
+}
+
+/***SECCION FOOTER***/
+
+footer{
+    align-items: center;
+    background-color: var(--color-fondo-footer);
+    display: flex;
+    flex-direction: column;
+    padding: 0 5vw;
+}
+
+footer input{
+    border-radius: 30px;
+    border-style: hidden;
+    padding: 2vh;
+    margin: 7vh 0;
+}
+
+footer button{
+    font-weight: bold;
+    margin: 0 1vw;
+}
+
+footer button:hover{
+    filter: opacity(25%);
+}
+
+.columna-escritorio{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*NAVEGADOR*/
+footer nav{
+    background-color: var(--color-fondo-footer);
+    display: flex;
+    flex-direction: row;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+    padding: 5vh 12vw;
+}
+
+.columnas a{
+    color: var(--color-botones);
+    padding: 1vh 0;
+    text-decoration: none;
+}
+
+.columnas a:hover{
+    color: var(--color-secundario);
+}
+
+/*LOGO*/
+
+footer h2{
+    color: var(--color-botones);
+    font-weight: 500;
+    padding: 4vh 0;
+}
+
+footer h2::before{
+    content: url('../imagenes/icono-titulo.png');
+    margin-right: 1vw;
+}
+
+footer p{
+    color: var(--color-textos);
+    font-size: 0.75rem;
+    padding: 5vh 0;
+}
+
+/*ICONOS*/
+
+.iconos{
+    display: flex;
+}
+
+.iconos i{
+    font-size: 2rem;
+    color: var(--color-botones);
+    padding: 0 4vw;
+}
+
+i:hover{
+    color:  var(--color-secundario);
+}
+
+
+
